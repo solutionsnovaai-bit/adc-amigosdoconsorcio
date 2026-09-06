@@ -63,7 +63,7 @@
       io.unobserve(en.target);
       if (en.target.hasAttribute('data-count')) countUp(en.target);
     });
-  }, { threshold: 0.16, rootMargin: '0px 0px -60px' });
+  }, { threshold: 0.01, rootMargin: '0px 0px 0px 0px' });
 
   $$('.reveal').forEach(function (el, i) {
     el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
@@ -72,6 +72,18 @@
   $$('.mask').forEach(function (el) { io.observe(el); });
   $$('[data-count]').forEach(function (el) { io.observe(el); });
   var barsBlock = $('.bars'); if (barsBlock) io.observe(barsBlock);
+
+  /* rede de segurança: se por qualquer motivo o observer não disparar
+     (ex.: elemento nasce fora do fluxo normal, layout mobile estranho),
+     força tudo a aparecer depois de um tempo — nada fica invisível pra sempre */
+  setTimeout(function () {
+    $$('.reveal, .mask, [data-count]').forEach(function (el) {
+      if (!el.classList.contains('in')) {
+        el.classList.add('in');
+        if (el.hasAttribute('data-count') && el.textContent.trim() === '0') countUp(el);
+      }
+    });
+  }, 2500);
 
   /* ─────────── CONTADORES ─────────── */
   function countUp(el) {
