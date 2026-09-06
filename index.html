@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="ADC — Amigos do Consórcio. Enzo Santorelli e Pedro Lucas, especialistas em consórcio e recordistas em cartas contempladas. Automóvel, imóvel, serviços e pesados, sem juros.">
+<meta name="theme-color" content="#0B0A08">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ADC — Amigos do Consórcio">
+<meta property="og:description" content="Especialistas em consórcio e recordistas em cartas contempladas. Automóvel, imóvel, serviços e pesados.">
+<meta property="og:image" content="assets/adc-badge.jpg">
+<title>ADC — Amigos do Consórcio</title>
+
+<link rel="icon" type="image/jpeg" href="assets/adc-mark.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Sora:wght@200;300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ LOADER ═══ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <span class="lm-halo" aria-hidden="true"></span>
+    <span class="lm-ring" aria-hidden="true"></span>
+    <img src="assets/adc-mark.jpg" alt="" class="lm-img">
+  </div>
+  <div class="loader-word"><span class="ln-line"></span>ESPECIALISTAS EM CONSÓRCIO<span class="ln-line"></span></div>
+  <div class="loader-track"><i></i></div>
+</div>
+
+<div id="scrollbar"><i></i></div>
+<div id="glow" aria-hidden="true"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#hero" class="nav-brand" aria-label="Início">
+    <img src="assets/adc-mark.jpg" alt="ADC" class="nav-mark">
+    <span class="nav-txt"><b>ADC</b><i>Amigos do Consórcio</i></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#consorcio">Como funciona</a></li>
+    <li><a href="#modalidades">Modalidades</a></li>
+    <li><a href="#fundadores">Quem somos</a></li>
+    <li><a href="#duvidas">Dúvidas</a></li>
+  </ul>
+  <a href="https://instagram.com/amigosdoconsorcio_" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram do ADC"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9s.68.82.9 1.38c.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38s-.82.68-1.38.9c-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9s-.68-.82-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38s.82-.68 1.38-.9c.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.9 5.9 0 0 0 1.38 2.13 5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0m0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84m0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4m7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44"/></svg></a>
+  <a href="#fundadores" class="btn-nav" data-magnetic>Falar com a gente</a>
+  <button id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+</nav>
+
+<div id="drawer">
+  <a href="#consorcio">Como funciona</a>
+  <a href="#modalidades">Modalidades</a>
+  <a href="#fundadores">Quem somos</a>
+  <a href="#comparativo">Por que consórcio</a>
+  <a href="#duvidas">Dúvidas</a>
+  <a href="https://instagram.com/amigosdoconsorcio_" target="_blank" rel="noopener">@amigosdoconsorcio_</a>
+  <a href="#fundadores" class="drawer-cta">Falar com a gente</a>
+</div>
+
+<!-- ═══ HERO — o anel em peso, visível de verdade ═══ -->
+<header id="hero">
+  <div class="hero-rules" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow reveal"><i class="dot"></i><span>São Paulo · Consórcio</span></div>
+
+      <h1 class="hero-h1">
+        <span class="mask"><span>Amigos</span></span>
+        <span class="mask"><span>do <em>Consórcio</em></span></span>
+      </h1>
+
+      <p class="hero-desc reveal">
+        Somos dois consultores que cansaram de ver gente assinando contrato sem entender
+        o que assinou. Aqui a conversa começa pelo que você quer conquistar — e o número
+        só aparece depois.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="https://wa.me/5511977996066?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20ADC" target="_blank" rel="noopener" class="btn btn-gold" data-magnetic data-ripple>Falar no WhatsApp</a>
+        <a href="#modalidades" class="btn btn-ghost" data-ripple>Ver modalidades</a>
+      </div>
+
+      <ul class="hero-stats reveal">
+        <li><b data-count="2">0</b><span>especialistas,<br>zero intermediário</span></li>
+        <li><b data-count="4">0</b><span>modalidades</span></li>
+        <li><b class="nc">0%</b><span>de juros<sup>*</sup></span></li>
+      </ul>
+    </div>
+
+    <figure class="hero-visual reveal" aria-hidden="true">
+      <span class="hv-halo"></span>
+      <img src="assets/adc-mark.jpg" alt="ADC — Amigos do Consórcio" class="hv-img">
+    </figure>
+  </div>
+
+  <a href="#consorcio" class="scroll-hint" aria-label="Rolar"><i></i>rolar</a>
+</header>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-row">
+    <span>AUTOMÓVEL<i>◆</i>IMÓVEL<i>◆</i>SERVIÇOS<i>◆</i>PESADOS<i>◆</i>MOTOS<i>◆</i>AUTOMÓVEL<i>◆</i>IMÓVEL<i>◆</i>SERVIÇOS<i>◆</i>PESADOS<i>◆</i>MOTOS<i>◆</i></span>
+    <span>AUTOMÓVEL<i>◆</i>IMÓVEL<i>◆</i>SERVIÇOS<i>◆</i>PESADOS<i>◆</i>MOTOS<i>◆</i>AUTOMÓVEL<i>◆</i>IMÓVEL<i>◆</i>SERVIÇOS<i>◆</i>PESADOS<i>◆</i>MOTOS<i>◆</i></span>
+  </div>
+</div>
+
+<!-- ═══ COMO FUNCIONA — seção clara ═══ -->
+<section id="consorcio" class="sec sec-light">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Como funciona</span>
+      <h2 class="h2">Compra planejada,<br><em>não dívida cara.</em></h2>
+      <p class="lead">
+        Consórcio é compra programada, regulada pelo Banco Central. Um grupo se junta
+        para comprar bens do mesmo tipo e, todo mês, alguém é contemplado — por sorteio
+        ou por lance. Sem banco no meio cobrando juros pelo dinheiro.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li class="reveal"><span class="n">01</span><h3>Você escolhe a carta</h3><p>Define o valor do bem e o prazo. A parcela sai da divisão desse valor pelo número de meses, mais a taxa de administração.</p></li>
+      <li class="reveal"><span class="n">02</span><h3>Entra no grupo</h3><p>Grupo formado, assembleias mensais. Da primeira em diante você já concorre — sem entrada.</p></li>
+      <li class="reveal"><span class="n">03</span><h3>É contemplado</h3><p>Por sorteio ou por lance. Quem tem prazo trabalha com estratégia; quem tem paciência espera e paga menos.</p></li>
+      <li class="reveal"><span class="n">04</span><h3>Compra à vista</h3><p>Carta liberada, você negocia como comprador à vista — e desconto de quem paga à vista é outro papo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══ BANDA DA DUPLA — foto grande, escura ═══ -->
+<section class="band-duo">
+  <figure class="band-photo">
+    <img src="assets/adc-badge.jpg" alt="Enzo Santorelli e Pedro Lucas, fundadores do ADC — Amigos do Consórcio" loading="lazy">
+  </figure>
+  <div class="band-copy">
+    <span class="tag reveal">A dupla por trás do ADC</span>
+    <p class="band-quote reveal">Fundamos o ADC porque cansamos de ver gente saindo de uma reunião de consórcio mais confusa do que entrou.</p>
+    <a href="#fundadores" class="btn btn-gold reveal" data-magnetic data-ripple>Conhecer o Enzo e o Pedro</a>
+  </div>
+</section>
+
+<!-- ═══ SIGNATURE · O ANEL ADC — escura ═══ -->
+<section id="modalidades" class="sec sec-ring">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Modalidades</span>
+      <h2 class="h2">Quatro caminhos<br><em>dentro do mesmo círculo.</em></h2>
+      <p class="lead">Escolha uma modalidade e veja o anel percorrer até ela.</p>
+    </div>
+
+    <div class="dial" id="dial">
+      <div class="dial-stage">
+        <svg viewBox="0 0 400 400" class="dial-svg" aria-hidden="true">
+          <circle cx="200" cy="200" r="190.3" fill="none" stroke="rgba(216,169,79,.16)" stroke-width="16.13"/>
+          <circle cx="200" cy="200" r="190.3" fill="none" stroke="#D8A94F" stroke-width="16.13"
+                  stroke-linecap="round" pathLength="1000" class="dial-arc"/>
+        </svg>
+        <div class="dial-core">
+          <span class="dial-idx">01</span>
+          <b class="dial-name">Automóvel</b>
+          <span class="dial-sub">&amp; Moto</span>
+        </div>
+      </div>
+
+      <ul class="dial-list">
+        <li class="dl is-on reveal" data-i="0">
+          <button class="dl-btn" aria-expanded="true">
+            <span class="dl-n">01</span>
+            <span class="dl-name">Automóvel &amp; Moto</span>
+            <span class="dl-plus" aria-hidden="true"></span>
+          </button>
+          <div class="dl-body">
+            <p>Zero km ou seminovo, nacional ou importado, carro ou moto. Você escolhe a marca, o modelo e a loja — a carta é dinheiro à vista na sua mão.</p>
+            <ul class="chips"><li>Carros zero</li><li>Seminovos</li><li>Motos</li><li>Troca de carro</li></ul>
+          </div>
+        </li>
+        <li class="dl reveal" data-i="1">
+          <button class="dl-btn" aria-expanded="false">
+            <span class="dl-n">02</span>
+            <span class="dl-name">Imóvel</span>
+            <span class="dl-plus" aria-hidden="true"></span>
+          </button>
+          <div class="dl-body">
+            <p>Casa, apartamento, terreno, sala comercial, construção ou reforma. Serve também para quitar financiamento e parar de alimentar juros.</p>
+            <ul class="chips"><li>Primeiro imóvel</li><li>Terreno</li><li>Construção</li><li>Quitar financiamento</li></ul>
+          </div>
+        </li>
+        <li class="dl reveal" data-i="2">
+          <button class="dl-btn" aria-expanded="false">
+            <span class="dl-n">03</span>
+            <span class="dl-name">Serviços</span>
+            <span class="dl-plus" aria-hidden="true"></span>
+          </button>
+          <div class="dl-body">
+            <p>Aquele projeto que sempre fica pra depois: casamento, intercâmbio, faculdade, tratamento de saúde, viagem.</p>
+            <ul class="chips"><li>Casamento</li><li>Estudos</li><li>Saúde</li><li>Viagem</li></ul>
+          </div>
+        </li>
+        <li class="dl reveal" data-i="3">
+          <button class="dl-btn" aria-expanded="false">
+            <span class="dl-n">04</span>
+            <span class="dl-name">Pesados &amp; Frota</span>
+            <span class="dl-plus" aria-hidden="true"></span>
+          </button>
+          <div class="dl-body">
+            <p>Caminhão, implemento, máquina agrícola, equipamento. Pro autônomo que quer o próprio cavalo e pra empresa que precisa crescer sem travar o caixa.</p>
+            <ul class="chips"><li>Caminhão</li><li>Implementos</li><li>Máquinas</li><li>Frota PJ</li></ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dial-cta reveal">
+      <a href="https://wa.me/5511977996066?text=Ol%C3%A1%2C%20quero%20simular%20um%20consórcio" target="_blank" rel="noopener" class="btn btn-gold" data-magnetic data-ripple>Simular minha carta</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FUNDADORES — clara ═══ -->
+<section id="fundadores" class="sec sec-light sec-founders">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Quem somos</span>
+      <h2 class="h2">Dois nomes,<br><em>uma mesma régua.</em></h2>
+      <p class="lead">
+        O ADC nasceu de uma inconformidade: consórcio bom explicado de um jeito ruim.
+        Fundamos a marca para fazer diferente — atendimento direto, sem central e sem
+        letra miúda. Fazemos parte do time Embracon e mantemos parcerias com outras
+        administradoras, o que nos deixa livres para indicar o plano que serve a você,
+        e não o que dá mais comissão. Você escolhe com quem falar.
+      </p>
+    </div>
+
+    <div class="founders">
+      <article class="fd reveal">
+        <figure class="fd-photo">
+          <img src="assets/pedro.jpg" alt="Pedro Lucas, sócio-fundador do ADC" loading="lazy">
+          <span class="fd-ring" aria-hidden="true"></span>
+        </figure>
+        <span class="fd-role">Sócio-fundador</span>
+        <h3>Pedro Lucas</h3>
+        <p>Especialista em consórcio e recordista em cartas contempladas. Atende de pessoa física a operação de empresa e é implacável em estratégia de lance — porque quem tem prazo pra cumprir não pode depender só de sorteio.</p>
+        <div class="fd-links">
+          <a href="https://wa.me/5511939079880?text=Ol%C3%A1%20Pedro%2C%20vim%20pelo%20site%20do%20ADC" target="_blank" rel="noopener" class="btn btn-gold btn-sm" data-ripple>
+            <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81s-.39-.12-.56.13-.64.81-.79.98-.29.19-.54.06a6.7 6.7 0 0 1-1.99-1.23 7.4 7.4 0 0 1-1.37-1.71c-.14-.25-.01-.38.11-.5s.25-.29.37-.44.17-.25.25-.41.04-.31-.02-.44-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48a.93.93 0 0 0-.67.31 2.82 2.82 0 0 0-.87 2.09 4.88 4.88 0 0 0 1.02 2.59 11.2 11.2 0 0 0 4.28 3.79c.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18s.21-1.08.15-1.19-.23-.17-.48-.29"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/opedrolucass_" target="_blank" rel="noopener" class="fd-ig">@opedrolucass_</a>
+        </div>
+      </article>
+
+      <article class="fd reveal">
+        <figure class="fd-photo">
+          <img src="assets/enzo.jpg" alt="Enzo Santorelli, sócio-fundador do ADC" loading="lazy">
+          <span class="fd-ring" aria-hidden="true"></span>
+        </figure>
+        <span class="fd-role">Sócio-fundador</span>
+        <h3>Enzo Santorelli</h3>
+        <p>Especialista em consórcio e recordista em cartas contempladas. Trabalha as quatro modalidades e explica o produto inteiro antes de falar em parcela — inclusive o que o consórcio <em>não</em> é. Quem senta com ele sai sabendo exatamente o que assinou.</p>
+        <div class="fd-links">
+          <a href="https://wa.me/5511977996066?text=Ol%C3%A1%20Enzo%2C%20vim%20pelo%20site%20do%20ADC" target="_blank" rel="noopener" class="btn btn-gold btn-sm" data-ripple>
+            <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81s-.39-.12-.56.13-.64.81-.79.98-.29.19-.54.06a6.7 6.7 0 0 1-1.99-1.23 7.4 7.4 0 0 1-1.37-1.71c-.14-.25-.01-.38.11-.5s.25-.29.37-.44.17-.25.25-.41.04-.31-.02-.44-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48a.93.93 0 0 0-.67.31 2.82 2.82 0 0 0-.87 2.09 4.88 4.88 0 0 0 1.02 2.59 11.2 11.2 0 0 0 4.28 3.79c.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18s.21-1.08.15-1.19-.23-.17-.48-.29"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/enzosantorelli_" target="_blank" rel="noopener" class="fd-ig">@enzosantorelli_</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPARATIVO — escura ═══ -->
+<section id="comparativo" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Por que consórcio</span>
+      <h2 class="h2">O mesmo bem,<br><em>dois preços diferentes.</em></h2>
+      <p class="lead">Financiamento e consórcio levam ao mesmo lugar. O que muda é quanto custa o caminho — e a conta só aparece inteira no fim do plano.</p>
+    </div>
+
+    <div class="bars reveal">
+      <span class="bars-axis">Quanto você paga do começo ao fim do plano</span>
+
+      <div class="bar">
+        <div class="bar-top"><span>Financiamento bancário</span><b class="verdict">Bem mais caro</b></div>
+        <div class="track"><i class="fill fill-fin" style="--w:100%"></i></div>
+        <span class="bar-note">Você leva o bem hoje e paga o banco por isso: juros compostos sobre o saldo devedor, do primeiro ao último boleto.</span>
+      </div>
+
+      <div class="bar">
+        <div class="bar-top"><span>Consórcio</span><b class="verdict verdict-gold">Bem mais barato</b></div>
+        <div class="track"><i class="fill fill-con" style="--w:68%"></i></div>
+        <span class="bar-note">Sem juros. Só a taxa de administração, definida em contrato e diluída nas parcelas.</span>
+      </div>
+
+      <p class="bars-foot">
+        A diferença entre as duas barras é o preço da pressa. Se você precisa do bem agora,
+        o financiamento resolve — e cobra caro por isso. Se dá pra planejar, o consórcio
+        entrega o mesmo bem por bem menos. Cada modalidade tem tabela própria de prazos e
+        taxas: a gente monta a sua com os números reais antes de qualquer assinatura.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DÚVIDAS — clara ═══ -->
+<section id="duvidas" class="sec sec-light">
+  <div class="wrap wrap-narrow">
+    <div class="sec-head reveal">
+      <span class="tag">Dúvidas</span>
+      <h2 class="h2">Perguntas que<br><em>todo mundo faz.</em></h2>
+    </div>
+
+    <div class="faq">
+      <details class="reveal"><summary>Consórcio realmente não tem juros?</summary><p>Não tem juros. O que existe é a taxa de administração, definida em contrato e diluída nas parcelas — é o que remunera a administradora por gerir o grupo. Por isso o custo total costuma ficar bem abaixo do de um financiamento.</p></details>
+      <details class="reveal"><summary>Quando eu recebo a carta?</summary><p>Na contemplação, que acontece por sorteio nas assembleias mensais ou por lance, quando você antecipa parte do valor. Não existe data garantida de sorteio — quem precisa do bem em prazo certo trabalha com estratégia de lance, e isso a gente monta junto.</p></details>
+      <details class="reveal"><summary>Preciso de entrada?</summary><p>Não. Você entra no grupo pagando a primeira parcela e já concorre desde a primeira assembleia.</p></details>
+      <details class="reveal"><summary>Posso usar o FGTS?</summary><p>No consórcio de imóvel, sim — dentro das regras da Caixa, o FGTS pode ser usado para dar lance, complementar a carta ou amortizar parcelas.</p></details>
+      <details class="reveal"><summary>E se eu quiser sair no meio?</summary><p>Dá pra transferir a cota para outra pessoa ou pedir o desligamento, com a devolução prevista em contrato após o encerramento do grupo. É um dos pontos que explicamos antes da assinatura, não depois.</p></details>
+      <details class="reveal"><summary>A parcela muda com o tempo?</summary><p>Sim. A carta é reajustada pelo índice do contrato para acompanhar o preço do bem, de forma que o seu crédito não perca poder de compra ao longo do plano.</p></details>
+    </div>
+
+    <div class="faq-cta reveal">
+      <p>Não achou sua pergunta aqui?</p>
+      <a href="https://wa.me/5511977996066?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20cons%C3%B3rcio" target="_blank" rel="noopener" class="btn btn-navy btn-sm" data-ripple>Manda a dúvida no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL — escura, com o anel e a dupla ═══ -->
+<section class="cta" id="contato">
+  <img src="assets/adc-mark.jpg" alt="" class="cta-ring" aria-hidden="true">
+  <div class="wrap">
+    <span class="tag reveal">Vamos conversar</span>
+    <h2 class="cta-h2 reveal">Conta pra gente o que<br>você quer <em>conquistar.</em></h2>
+    <p class="cta-sub reveal">Sem compromisso e sem enrolação. Escolhe com quem falar — o Enzo ou o Pedro respondem pessoalmente.</p>
+    <div class="cta-btns reveal">
+      <a href="https://wa.me/5511977996066?text=Ol%C3%A1%20Enzo%2C%20vim%20pelo%20site%20do%20ADC" target="_blank" rel="noopener" class="btn btn-gold" data-magnetic data-ripple>Falar com o Enzo</a>
+      <a href="https://wa.me/5511939079880?text=Ol%C3%A1%20Pedro%2C%20vim%20pelo%20site%20do%20ADC" target="_blank" rel="noopener" class="btn btn-gold" data-magnetic data-ripple>Falar com o Pedro</a>
+    </div>
+    <a href="https://instagram.com/amigosdoconsorcio_" target="_blank" rel="noopener" class="cta-ig reveal">@amigosdoconsorcio_</a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/adc-horizontal.jpg" alt="ADC — Amigos do Consórcio" class="foot-mark">
+      <span>Enzo Santorelli · Pedro Lucas</span>
+      <a href="https://instagram.com/amigosdoconsorcio_" target="_blank" rel="noopener" class="foot-ig">@amigosdoconsorcio_</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-h">Enzo Santorelli</span>
+      <a href="https://wa.me/5511977996066" target="_blank" rel="noopener">(11) 97799-6066</a>
+      <a href="https://instagram.com/enzosantorelli_" target="_blank" rel="noopener">@enzosantorelli_</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-h">Pedro Lucas</span>
+      <a href="https://wa.me/5511939079880" target="_blank" rel="noopener">(11) 93907-9880</a>
+      <a href="https://instagram.com/opedrolucass_" target="_blank" rel="noopener">@opedrolucass_</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-h">Modalidades</span>
+      <a href="#modalidades">Automóvel &amp; Moto</a>
+      <a href="#modalidades">Imóvel</a>
+      <a href="#modalidades">Serviços</a>
+      <a href="#modalidades">Pesados &amp; Frota</a>
+    </div>
+  </div>
+  <div class="wrap foot-legal">
+    <p><sup>*</sup> Consórcio não possui juros. Incide taxa de administração, fundo de reserva e demais encargos previstos em contrato. Contemplação por sorteio ou lance, sem data garantida. Cada modalidade possui tabela própria de prazos, taxas e condições, informadas na proposta. As comparações nesta página são ilustrativas e não constituem oferta. Administradoras fiscalizadas pelo Banco Central do Brasil.</p>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> ADC · Amigos do Consórcio</span>
+      <span>Nova AI Solutions</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#fundadores" class="float-cta" id="float-cta" aria-label="Falar com a gente">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81s-.39-.12-.56.13-.64.81-.79.98-.29.19-.54.06a6.7 6.7 0 0 1-1.99-1.23 7.4 7.4 0 0 1-1.37-1.71c-.14-.25-.01-.38.11-.5s.25-.29.37-.44.17-.25.25-.41.04-.31-.02-.44-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48a.93.93 0 0 0-.67.31 2.82 2.82 0 0 0-.87 2.09 4.88 4.88 0 0 0 1.02 2.59 11.2 11.2 0 0 0 4.28 3.79c.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18s.21-1.08.15-1.19-.23-.17-.48-.29"/></svg>
+  <span>Falar com a gente</span>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
