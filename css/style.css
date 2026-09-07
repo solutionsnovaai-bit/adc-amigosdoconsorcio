@@ -24,7 +24,7 @@
 }
 
 *,*::before,*::after{ box-sizing:border-box }
-html{ scroll-behavior:smooth; scroll-padding-top:90px }
+html{ scroll-behavior:smooth; scroll-padding-top:90px; overflow-x:hidden }
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto } }
 
 body{
@@ -40,10 +40,10 @@ a{ color:inherit; text-decoration:none }
 img{ display:block; max-width:100% }
 ::selection{ background:var(--gold); color:var(--ink) }
 
-.wrap{ max-width:1180px; margin:0 auto; padding-inline:32px }
+.wrap{ max-width:1180px; margin:0 auto; padding-inline:32px; min-width:0 }
 .wrap-narrow{ max-width:820px }
 
-.sec{ position:relative; padding-block:clamp(84px,11vw,148px); background:var(--ink); overflow:hidden }
+.sec{ position:relative; padding-block:clamp(84px,11vw,148px); background:var(--ink); overflow:hidden; min-width:0 }
 .sec-light{ background:var(--paper); color:var(--paper-ink) }
 .sec-dark{ background:var(--ink-2) }
 .sec-ring{ background:radial-gradient(120% 90% at 50% 0%, #17140F 0%, var(--ink) 62%) }
@@ -197,7 +197,7 @@ body.fine #glow{ opacity:1 }
 .hero-stats b{ font-family:var(--m); font-weight:600; font-size:clamp(24px,3vw,34px); color:var(--gold-hot) }
 .hero-stats span{ font-size:12.5px; color:#B9AF9B; line-height:1.4 }
 
-.hero-visual{ position:relative; display:flex; align-items:center; justify-content:center; margin:0 }
+.hero-visual{ position:relative; display:flex; align-items:center; justify-content:center; margin:0; min-width:0 }
 .hv-halo{
   position:absolute; inset:-16%; border-radius:50%;
   background:radial-gradient(circle, rgba(216,169,79,.32) 0%, rgba(216,169,79,0) 68%);
@@ -236,8 +236,9 @@ body.fine #glow{ opacity:1 }
 /* ─────────── BANDA DA DUPLA ─────────── */
 .band-duo{
   position:relative; display:grid; grid-template-columns:1.05fr 1fr; min-height:520px; background:var(--ink-deep);
+  min-width:0;
 }
-.band-photo{ position:relative; overflow:hidden }
+.band-photo{ position:relative; overflow:hidden; min-width:0 }
 .band-photo img{ width:100%; height:100%; object-fit:cover; object-position:center 22% }
 .band-photo::after{ content:''; position:absolute; inset:0; background:linear-gradient(90deg, transparent 60%, var(--ink-deep) 100%) }
 .band-copy{ display:flex; flex-direction:column; justify-content:center; gap:24px; padding:60px clamp(28px,5vw,72px) }
@@ -245,8 +246,8 @@ body.fine #glow{ opacity:1 }
 .band-copy .btn{ align-self:flex-start }
 
 /* ─────────── DIAL / MODALIDADES ─────────── */
-.dial{ display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(30px,5vw,70px); align-items:center }
-.dial-stage{ position:relative; width:min(360px,86vw); aspect-ratio:1; margin:0 auto }
+.dial{ display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(30px,5vw,70px); align-items:center; min-width:0 }
+.dial-stage{ position:relative; width:min(360px,86vw); aspect-ratio:1; margin:0 auto; min-width:0 }
 .dial-svg{ width:100%; height:100%; transform:rotate(-90deg) }
 .dial-arc{ transition:stroke-dashoffset .9s var(--ease) }
 .dial-core{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; text-align:center }
@@ -279,9 +280,9 @@ body.fine #glow{ opacity:1 }
 .dial-cta{ margin-top:52px; text-align:center }
 
 /* ─────────── FUNDADORES ─────────── */
-.founders{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,54px) }
-.fd{ display:flex; flex-direction:column; gap:14px }
-.fd-photo{ position:relative; border-radius:20px; overflow:hidden; aspect-ratio:4/5 }
+.founders{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,54px); min-width:0 }
+.fd{ display:flex; flex-direction:column; gap:14px; min-width:0 }
+.fd-photo{ position:relative; border-radius:20px; overflow:hidden; aspect-ratio:4/5; min-width:0; width:100% }
 .fd-photo img{ width:100%; height:100%; object-fit:cover; filter:grayscale(.25) }
 .fd-ring{ position:absolute; inset:14px; border:1px solid rgba(216,169,79,.5); border-radius:14px; pointer-events:none }
 .fd-role{ font-family:var(--m); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-deep) }
