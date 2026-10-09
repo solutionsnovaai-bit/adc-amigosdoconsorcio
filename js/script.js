@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════
    ADC · AMIGOS DO CONSÓRCIO
-   Nova AI Solutions
    ═══════════════════════════════════════════ */
 (function () {
   'use strict';
@@ -101,9 +100,12 @@
 
   /* ─────────── GLOW QUE SEGUE O CURSOR ─────────── */
   if (fine && !reduced) {
-    document.body.classList.add('fine');
-    var glow = $('#glow'), gx = 0, gy = 0, tx = 0, ty = 0;
-    document.addEventListener('mousemove', function (e) { tx = e.clientX; ty = e.clientY; });
+    var glow = $('#glow'), gx = 0, gy = 0, tx = 0, ty = 0, moved = false;
+    document.addEventListener('mousemove', function (e) {
+      tx = e.clientX; ty = e.clientY;
+      // o brilho só aparece depois do primeiro movimento, já na posição do cursor
+      if (!moved) { moved = true; gx = tx; gy = ty; document.body.classList.add('fine'); }
+    });
     (function loop() {
       gx += (tx - gx) * 0.12; gy += (ty - gy) * 0.12;
       if (glow) glow.style.transform = 'translate3d(' + (gx - 350) + 'px,' + (gy - 350) + 'px,0)';
