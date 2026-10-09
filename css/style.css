@@ -200,6 +200,8 @@ body.fine #glow{ opacity:1 }
 .eyebrow .dot{ width:7px; height:7px; border-radius:50%; background:var(--orange); box-shadow:0 0 0 4px rgba(244,123,31,.2) }
 .hero-h1{ font-size:min(90px, calc(100cqi / 6.6)); line-height:.96; font-weight:600; letter-spacing:-.02em; color:var(--ink) }
 .hero-h1 em{ font-style:normal; color:var(--orange-ink) }
+/* folga para a perna do g não ser cortada pela máscara da linha */
+.hero-h1 .mask{ padding-bottom:.14em; margin-bottom:-.14em }
 .hero-desc{ margin-top:24px; max-width:46ch; font-size:17px; font-weight:400; color:#2B2B2A }
 .hero-cta{ display:flex; flex-wrap:wrap; gap:14px; margin-top:32px }
 .hero-stats{ display:flex; flex-wrap:wrap; gap:18px clamp(22px,3.4vw,46px); list-style:none; margin:clamp(30px,5vh,52px) 0 0; padding:24px 0 0; border-top:1px solid rgba(17,17,17,.16) }
@@ -271,7 +273,7 @@ body.fine #glow{ opacity:1 }
 .dl.is-on .dl-n{ color:var(--orange-deep) }
 .dl.is-on .dl-plus::before, .dl.is-on .dl-plus::after{ background:var(--orange) }
 .dl-body{ max-height:0; overflow:hidden; transition:max-height .5s var(--ease) }
-.dl.is-on .dl-body{ max-height:200px }
+.dl.is-on .dl-body{ max-height:320px }
 .dl-body p{ padding:0 4px 18px 38px; font-size:14px; color:var(--ink-2); max-width:52ch }
 .chips{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0 4px 20px 38px }
 .chips li{ font-family:var(--m); font-size:11px; letter-spacing:.04em; padding:6px 12px; border-radius:100px; border:1px solid rgba(244,123,31,.55); background:var(--white); color:var(--ink) }
@@ -403,13 +405,20 @@ footer{ background:var(--black-2); padding-block:clamp(50px,6vw,74px) 30px; colo
   .hero-stats{ justify-content:center; text-align:left }
   .scroll-hint{ display:none }
 }
-/* quando a arte em pé fica mais estreita que a tela, as laterais dela se dissolvem na parede */
+/*
+  Tablet, celular deitado e janelas médias: a arte em pé seria mais estreita que a tela,
+  então ela vira um quadro (o trecho da parede com o logotipo inteiro), com o texto embaixo.
+*/
 @media (min-width:561px) and (max-width:1199px), (min-width:561px) and (max-aspect-ratio:3/2){
+  #hero{ padding-top:104px; background:var(--white) }
+  #hero::before{ display:none }
+  .hero-art{
+    position:relative; z-index:1; display:block; width:min(560px, 78vw, calc(50svh * 1.478)); aspect-ratio:940 / 636;
+    margin:0 auto 34px; border-radius:26px; overflow:hidden; box-shadow:0 44px 70px -44px rgba(0,0,0,.5);
+  }
   .hero-art img{
-    -webkit-mask:linear-gradient(#000 calc(var(--arte-w) * .5), transparent calc(var(--arte-w) * .96)), linear-gradient(90deg, transparent, #000 4.5%, #000 95.5%, transparent);
-    -webkit-mask-composite:source-in;
-    mask:linear-gradient(#000 calc(var(--arte-w) * .5), transparent calc(var(--arte-w) * .96)), linear-gradient(90deg, transparent, #000 4.5%, #000 95.5%, transparent);
-    mask-composite:intersect;
+    inset:0; left:0; top:0; transform:none; width:100%; height:100%; object-fit:cover; object-position:50% 17.5%;
+    -webkit-mask:none; mask:none;
   }
 }
 @media (max-width:640px){
